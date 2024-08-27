@@ -5,6 +5,7 @@ META-INF
 Servers
 .classpath
 .project
+driver.xml
 
 ### Eclipse ###
 .metadata
