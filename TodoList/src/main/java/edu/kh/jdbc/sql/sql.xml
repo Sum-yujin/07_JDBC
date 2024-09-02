@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!--
+		driver.xml 파일 : DB 연결 정보를 작성하는 외부 파일
+	
+		entry : K, V 한 쌍을 나타내는 단위
+		<entry key="K"> V </entry>
+	  -->
+	
+	<!-- 할 일 등록 -->
+	<entry key="insertTodo">
+		INSERT INTO TB_TODOLIST
+		VALUES(SEQ_TODO_NO.NEXTVAL,
+				?,
+				?,
+				DEFAULT,
+				DEFAULT)
+	</entry>
+	
+	<!-- 할 일 수정 -->
+	<entry key="modifyTodo">
+		SELECT *
+		FROM TB_TODOLIST
+		WHERE TODO_NO = ?;
+	</entry>
+	
+</properties>

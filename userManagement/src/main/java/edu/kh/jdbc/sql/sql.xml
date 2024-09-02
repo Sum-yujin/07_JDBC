@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!--
+		driver.xml 파일 : DB 연결 정보를 작성하는 외부 파일
+	
+		entry : K, V 한 쌍을 나타내는 단위
+		<entry key="K"> V </entry>
+	  -->
+	
+	<!-- 사용자 등록 -->
+	<entry key="insertUser">
+		INSERT INTO TB_USER
+		VALUES(SEQ_USER_NO.NEXTVAL,
+				?,
+				?,
+				?,
+				DEFAULT)
+	</entry>
+	
+</properties>
